@@ -1488,7 +1488,7 @@ void Running_2()
 	}
 	
 	LeftTurn_90();		//再搬运G点的5个色块
-	for(int i=0; i<5; i++){
+	for(int j=0; j<5; j++){
 		Forward_Target_Get();
 		switch(GetColor())
 		{
