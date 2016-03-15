@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<package name="default" extends="struts-default">
+	<action name="save_position" class="com.emps.action.SavePositionAction">
+	</action>
+	<action name="get_position" class="com.emps.action.GetPositionAction">
+	</action>
+</package>
+</struts>    

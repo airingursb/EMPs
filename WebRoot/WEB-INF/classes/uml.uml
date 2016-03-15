@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA" name="uml">
+  <packagedElement xmi:type="uml:Package" xmi:id="_JWGJgOWiEeWsbJAHL2VMRQ" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_JWGJgeWiEeWsbJAHL2VMRQ" name="emps">
+      <packagedElement xmi:type="uml:Package" xmi:id="_JWGJguWiEeWsbJAHL2VMRQ" name="entity">
+        <packagedElement xmi:type="uml:Class" xmi:id="_JWGJg-WiEeWsbJAHL2VMRQ" name="Car" clientDependency="_JXkJIeWiEeWsbJAHL2VMRQ">
+          <ownedComment xmi:id="_JWGwkOWiEeWsbJAHL2VMRQ">
+            <body>/** 
+ * Car entity. @author MyEclipse Persistence Tools
+ */
+</body>
+          </ownedComment>
+          <ownedAttribute xmi:id="_JXlXQOWiEeWsbJAHL2VMRQ" name="carId" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_JXmlYOWiEeWsbJAHL2VMRQ" name="carRoute" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_JXnzgOWiEeWsbJAHL2VMRQ" name="carSpeed" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_JXpBoOWiEeWsbJAHL2VMRQ" name="carDirect" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_JXqPwOWiEeWsbJAHL2VMRQ" name="carTime" visibility="private"/>
+          <interfaceRealization xmi:id="_JXkJIeWiEeWsbJAHL2VMRQ" name="java.io.Serializable" supplier="_JXkJIOWiEeWsbJAHL2VMRQ" client="_JWGJg-WiEeWsbJAHL2VMRQ" contract="_JXkJIOWiEeWsbJAHL2VMRQ"/>
+          <ownedOperation xmi:id="_JXq20OWiEeWsbJAHL2VMRQ" name="getCarId" visibility="public">
+            <ownedParameter xmi:id="_JXq20eWiEeWsbJAHL2VMRQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_JXsE8OWiEeWsbJAHL2VMRQ" name="setCarId" visibility="public">
+            <ownedParameter xmi:id="_JXsE8eWiEeWsbJAHL2VMRQ" name="carId">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_JXssAOWiEeWsbJAHL2VMRQ" name="getCarRoute" visibility="public">
+            <ownedParameter xmi:id="_JXssAeWiEeWsbJAHL2VMRQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_JXtTEOWiEeWsbJAHL2VMRQ" name="setCarRoute" visibility="public">
+            <ownedParameter xmi:id="_JXtTEeWiEeWsbJAHL2VMRQ" name="carRoute">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_JXt6IeWiEeWsbJAHL2VMRQ" name="getCarSpeed" visibility="public">
+            <ownedParameter xmi:id="_JXt6IuWiEeWsbJAHL2VMRQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_JXuhMeWiEeWsbJAHL2VMRQ" name="setCarSpeed" visibility="public">
+            <ownedParameter xmi:id="_JXuhMuWiEeWsbJAHL2VMRQ" name="carSpeed">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_JXvIQeWiEeWsbJAHL2VMRQ" name="getCarDirect" visibility="public">
+            <ownedParameter xmi:id="_JXvIQuWiEeWsbJAHL2VMRQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_JXwWYeWiEeWsbJAHL2VMRQ" name="setCarDirect" visibility="public">
+            <ownedParameter xmi:id="_JXwWYuWiEeWsbJAHL2VMRQ" name="carDirect">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_JXyyoOWiEeWsbJAHL2VMRQ" name="getCarTime" visibility="public">
+            <ownedParameter xmi:id="_JXyyoeWiEeWsbJAHL2VMRQ" name="return" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_JXzZsOWiEeWsbJAHL2VMRQ" name="setCarTime" visibility="public">
+            <ownedParameter xmi:id="_JXzZseWiEeWsbJAHL2VMRQ" name="carTime"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_JXkJIOWiEeWsbJAHL2VMRQ" name="Serializable"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_BMwOk-XIEeWsbJAHL2VMRQ" name="dao">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_BMw1oOXIEeWsbJAHL2VMRQ" name="CarDao">
+          <ownedOperation xmi:id="_BNYgsOXIEeWsbJAHL2VMRQ" name="savePosition" visibility="public">
+            <ownedParameter xmi:id="_BNYgseXIEeWsbJAHL2VMRQ" name="car">
+              <type xmi:type="uml:DataType" href="../uml.uml#_BNX5pOXIEeWsbJAHL2VMRQ"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_BNwUIeXIEeWsbJAHL2VMRQ" name="getPositionByRoute" visibility="public">
+            <ownedParameter xmi:id="_BNwUIuXIEeWsbJAHL2VMRQ" name="route">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_BNwUI-XIEeWsbJAHL2VMRQ" name="return" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_BNwUJOXIEeWsbJAHL2VMRQ" name="getAllPosition" visibility="public">
+            <ownedParameter xmi:id="_BNwUJeXIEeWsbJAHL2VMRQ" name="return" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_CcSj0uXIEeWsbJAHL2VMRQ" name="CarDaoImpl" clientDependency="_CdCKsOXIEeWsbJAHL2VMRQ">
+          <ownedAttribute xmi:id="_CdCxwOXIEeWsbJAHL2VMRQ" name="transaction" visibility="private"/>
+          <interfaceRealization xmi:id="_CdCKsOXIEeWsbJAHL2VMRQ" name="CarDao" client="_CcSj0uXIEeWsbJAHL2VMRQ">
+            <supplier xmi:type="uml:Interface" href="../uml.uml#_CdBjoOXIEeWsbJAHL2VMRQ"/>
+            <contract href="../uml.uml#_CdBjoOXIEeWsbJAHL2VMRQ"/>
+          </interfaceRealization>
+          <ownedOperation xmi:id="_CdDY0OXIEeWsbJAHL2VMRQ" name="savePosition" visibility="public">
+            <ownedParameter xmi:id="_CdDY0eXIEeWsbJAHL2VMRQ" name="car">
+              <type xmi:type="uml:DataType" href="../uml.uml#_Ccq-UOXIEeWsbJAHL2VMRQ"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_CdD_4eXIEeWsbJAHL2VMRQ" name="getPositionByRoute" visibility="public">
+            <ownedParameter xmi:id="_CdD_4uXIEeWsbJAHL2VMRQ" name="route">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_CdD_4-XIEeWsbJAHL2VMRQ" name="return" direction="return">
+              <type xmi:type="uml:DataType" href="../uml.uml#_CcqXROXIEeWsbJAHL2VMRQ"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_CdEm8OXIEeWsbJAHL2VMRQ" name="getAllPosition" visibility="public">
+            <ownedParameter xmi:id="_CdEm8eXIEeWsbJAHL2VMRQ" name="return" direction="return">
+              <type xmi:type="uml:DataType" href="../uml.uml#_CcqXROXIEeWsbJAHL2VMRQ"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_ElqrIuXIEeWsbJAHL2VMRQ" name="action">
+        <packagedElement xmi:type="uml:Class" xmi:id="_ElqrI-XIEeWsbJAHL2VMRQ" name="SavePositionAction" clientDependency="_EmUyceXIEeWsbJAHL2VMRQ">
+          <generalization xmi:id="_EmUyc-XIEeWsbJAHL2VMRQ" general="_EmUycuXIEeWsbJAHL2VMRQ"/>
+          <ownedAttribute xmi:id="_EmVZgOXIEeWsbJAHL2VMRQ" name="serialVersionUID" visibility="private" isStatic="true" isReadOnly="true">
+            <ownedComment xmi:id="_EmWAkOXIEeWsbJAHL2VMRQ">
+              <body>/** 
+ */
+</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_EmVZgeXIEeWsbJAHL2VMRQ"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_EmWnoOXIEeWsbJAHL2VMRQ" name="car" visibility="private">
+            <type xmi:type="uml:DataType" href="../uml.uml#_El-0O-XIEeWsbJAHL2VMRQ"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_EmXOsOXIEeWsbJAHL2VMRQ" name="jsonResponse" visibility="private">
+            <type xmi:type="uml:DataType" href="../uml.uml#_El-0PeXIEeWsbJAHL2VMRQ"/>
+          </ownedAttribute>
+          <interfaceRealization xmi:id="_EmUyceXIEeWsbJAHL2VMRQ" name="ModelDriven&lt;Car>" supplier="_EmUycOXIEeWsbJAHL2VMRQ" client="_ElqrI-XIEeWsbJAHL2VMRQ" contract="_EmUycOXIEeWsbJAHL2VMRQ"/>
+          <ownedOperation xmi:id="_EmYc0OXIEeWsbJAHL2VMRQ" name="execute" visibility="public">
+            <ownedParameter xmi:id="_EmYc0eXIEeWsbJAHL2VMRQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_EmZD4OXIEeWsbJAHL2VMRQ" name="getModel" visibility="public">
+            <ownedParameter xmi:id="_EmZD4eXIEeWsbJAHL2VMRQ" name="return" direction="return">
+              <type xmi:type="uml:DataType" href="../uml.uml#_El-0O-XIEeWsbJAHL2VMRQ"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_EmUycOXIEeWsbJAHL2VMRQ" name="ModelDriven&lt;Car>"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_EmUycuXIEeWsbJAHL2VMRQ" name="ActionSupport"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_E5pXEOXIEeWsbJAHL2VMRQ" name="GetPositionAction" clientDependency="_E6MJoeXIEeWsbJAHL2VMRQ">
+          <generalization xmi:id="_E6MJo-XIEeWsbJAHL2VMRQ">
+            <general xmi:type="uml:Class" href="../uml.uml#_E6MJouXIEeWsbJAHL2VMRQ"/>
+          </generalization>
+          <ownedAttribute xmi:id="_E6NXwOXIEeWsbJAHL2VMRQ" name="serialVersionUID" visibility="private" isStatic="true" isReadOnly="true">
+            <ownedComment xmi:id="_E6N-0OXIEeWsbJAHL2VMRQ">
+              <body>/** 
+ */
+</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_E6NXweXIEeWsbJAHL2VMRQ"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_E6Ol4OXIEeWsbJAHL2VMRQ" name="car" visibility="private">
+            <type xmi:type="uml:DataType" href="../uml.uml#_E51kW-XIEeWsbJAHL2VMRQ"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_E6P0AOXIEeWsbJAHL2VMRQ" name="jsonResponse" visibility="private">
+            <type xmi:type="uml:DataType" href="../uml.uml#_E51kXeXIEeWsbJAHL2VMRQ"/>
+          </ownedAttribute>
+          <interfaceRealization xmi:id="_E6MJoeXIEeWsbJAHL2VMRQ" name="ModelDriven&lt;Car>" client="_E5pXEOXIEeWsbJAHL2VMRQ">
+            <supplier xmi:type="uml:Interface" href="../uml.uml#_E6MJoOXIEeWsbJAHL2VMRQ"/>
+            <contract href="../uml.uml#_E6MJoOXIEeWsbJAHL2VMRQ"/>
+          </interfaceRealization>
+          <ownedOperation xmi:id="_E6RCIeXIEeWsbJAHL2VMRQ" name="execute" visibility="public">
+            <ownedParameter xmi:id="_E6RCIuXIEeWsbJAHL2VMRQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_E6RpMOXIEeWsbJAHL2VMRQ" name="getModel" visibility="public">
+            <ownedParameter xmi:id="_E6RpMeXIEeWsbJAHL2VMRQ" name="return" direction="return">
+              <type xmi:type="uml:DataType" href="../uml.uml#_E51kW-XIEeWsbJAHL2VMRQ"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_El-0PuXIEeWsbJAHL2VMRQ" name="google">
+      <packagedElement xmi:type="uml:Package" xmi:id="_El-0P-XIEeWsbJAHL2VMRQ" name="gson"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_El-0QeXIEeWsbJAHL2VMRQ" name="opensymphony">
+      <packagedElement xmi:type="uml:Package" xmi:id="_El-0QuXIEeWsbJAHL2VMRQ" name="xwork2"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_JWo8EOWiEeWsbJAHL2VMRQ" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_JWo8EeWiEeWsbJAHL2VMRQ" name="sql"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_BNX5oeXIEeWsbJAHL2VMRQ" name="util"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_El-NIeXIEeWsbJAHL2VMRQ" name="io"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_CcqXReXIEeWsbJAHL2VMRQ" name="org">
+    <packagedElement xmi:type="uml:Package" xmi:id="_CcqXRuXIEeWsbJAHL2VMRQ" name="hibernate">
+      <packagedElement xmi:type="uml:Package" xmi:id="_HhmQw-XIEeWsbJAHL2VMRQ" name="cfg"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_HhmQxeXIEeWsbJAHL2VMRQ" name="service"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_El-0NOXIEeWsbJAHL2VMRQ" name="apache">
+      <packagedElement xmi:type="uml:Package" xmi:id="_El-0NeXIEeWsbJAHL2VMRQ" name="struts2"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_El-NKOXIEeWsbJAHL2VMRQ" name="javax">
+    <packagedElement xmi:type="uml:Package" xmi:id="_El-0MOXIEeWsbJAHL2VMRQ" name="servlet">
+      <packagedElement xmi:type="uml:Package" xmi:id="_El-0MeXIEeWsbJAHL2VMRQ" name="http"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_SgrNcOXIEeWsbJAHL2VMRQ" name="ThreadLocal&lt;Session>"/>
+</uml:Model>
