@@ -2,6 +2,27 @@
  * Created by airing on 16/3/10.
  */
 
+function js_getTime() {
+	$.ajax({
+        type: "POST",
+        url: "http://localhost:8080/emps/get_time.action",
+        data: {},
+        success: function (data) {
+            var jsondata = eval(data);
+            var status = jsondata.status;
+            var intervals = jsondata.times;
+            var dataset = [];
+            for(var i = 0; i < intervals.length; i++) {
+            	dataset.push(intervals[i].timeTime)
+            }
+            showDataSet(dataset, "#svg");
+        },
+        error: function (XMLHttpRequest, textStatus) {
+            alert("XMLHttpRequest.status" + XMLHttpRequest.status);
+        }
+    });
+}
+
 function js_getMapRoute() {
     var route = document.getElementById("map_route");
     js_getPosition(route);
@@ -14,12 +35,12 @@ function js_getSpeedRoute() {
 
 function js_getTemperatureRoute() {
 	var route = document.getElementById("temperature_route");
-    js_getSpeed(route);
+	js_getTemperature(route);
 }
 
 function js_getHumidityRoute() {
 	var route = document.getElementById("humidity_route");
-    js_getSpeed(route);
+	js_getHumidity(route);
 }
 
 
@@ -144,6 +165,7 @@ function showDataSet(dataset, id) {
     var w = 1000;
     var h = 500;
 
+    
     var xScale = d3.scale.ordinal()
             .domain(d3.range(dataset.length))
             .rangeRoundBands([0, w], 0.05);
@@ -157,6 +179,9 @@ function showDataSet(dataset, id) {
             .attr("width", w)
             .attr("height", h);
 
+    svg.selectAll("rect").remove();
+    svg.selectAll("text").remove();
+    
     //Create bars
     svg.selectAll("rect")
             .data(dataset)
